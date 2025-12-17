@@ -24,6 +24,8 @@ import MultiSigSendPage from './pages/MultiSigSendPage';
 import MultiSigTransactionsPage from './pages/MultiSigTransactionsPage';
 import MultiSigMembersPage from './pages/MultiSigMembersPage';
 import MultiSigSettingsPage from './pages/MultiSigSettingsPage';
+import MultiSigRolesPage from './pages/MultiSigRolesPage';
+import MultiSigPolicyPage from './pages/MultiSigPolicyPage';
 
 /**
  * 메인 App 컴포넌트
@@ -54,6 +56,8 @@ function App() {
           <Route path="/multisig/:address/send" element={<MultiSigSendPage />} />
           <Route path="/multisig/:address/transactions" element={<MultiSigTransactionsPage />} />
           <Route path="/multisig/:address/members" element={<MultiSigMembersPage />} />
+          <Route path="/multisig/:address/roles" element={<MultiSigRolesPage />} />
+          <Route path="/multisig/:address/policy" element={<MultiSigPolicyPage />} />
           <Route path="/multisig/:address/settings" element={<MultiSigSettingsPage />} />
         </Routes>
       </Layout>
